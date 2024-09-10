@@ -2,10 +2,10 @@ package com.innoji.todolistapp.data.response
 
 import com.google.gson.annotations.SerializedName
 
-data class LoginResponse(
+data class DeleteChecklistResponse(
 
 	@field:SerializedName("data")
-	val data: DataLogin,
+	val data: String,
 
 	@field:SerializedName("errorMessage")
 	val errorMessage: String,
@@ -15,10 +15,4 @@ data class LoginResponse(
 
 	@field:SerializedName("statusCode")
 	val statusCode: Int
-)
-
-data class DataLogin(
-
-	@field:SerializedName("token")
-	val token: String
 )

@@ -1,4 +1,4 @@
-package com.innoji.todolistapp.data.api
+package com.innoji.todolistapp.data.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object{
-        const val BASE_URL = "94.74.86.174:8080/api"
+        const val BASE_URL = "https://94.74.86.174:8080/api/"
 
         fun getApiService():ApiService {
             val loggingInterceptor =

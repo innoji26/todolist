@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RegisterActivity">
+    tools:context=".ui.register.RegisterActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -85,6 +85,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <Button
         android:id="@+id/btn_singup"
         android:layout_width="wrap_content"
@@ -95,5 +96,27 @@
         app:layout_constraintStart_toStartOf="@+id/textPassword"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp"
+        android:text="Already have an account? Login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_singup"
+        app:layout_constraintStart_toStartOf="@+id/btn_singup"
+        app:layout_constraintTop_toBottomOf="@+id/btn_singup" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginTop="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
